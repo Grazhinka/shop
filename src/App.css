@@ -43,20 +43,20 @@ h1{
 }
 
 /* ---------------------------главная-------------------------- */
-.buttonToShop{
+.usePromo{
   margin-top: 50px;
   border: 1px solid #9C2C77;
   background-color:#9C2C77 ;
-  padding: 10px;
-  font-size: 30px;
+  padding: 5px;
   border-radius: 5px;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .gift{
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   border-bottom: none;
   border-top: none;
 }
@@ -111,6 +111,11 @@ h1{
   margin: 5px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+
+.imgShop{
+  width: 300px;
+  height: 450px;
 }
 
 /* ---------------------------каталог (корзина)-------------------------- */
@@ -183,6 +188,16 @@ input{
     display: flex;
     flex-direction: column;
   }
+
+  .imgMain,.imgShop{
+    width: 250px;
+    height: 350px;
+  }
+
+  .usePromo{
+    display: none;
+  }
+
 }
 
 @media all and (max-width:380px){
@@ -192,9 +207,5 @@ input{
   .displayAdapt{
     display: flex;
     flex-direction: column;
-  }
-  .imgMain{
-    width: 250px;
-    height: 350px;
   }
 }

@@ -19,8 +19,10 @@ const showTextClick=(good)=>{
 const add=(good)=>{
     let newObj={nameNew:good.name,idNew:good.id,descriptionNew:good.description,showMoreNew:good.showMore,imageNew:good.image,priceNew:good.price}
     const found = arr.some(el => el.idNew === good.id);
-    setSumm(summ+good.price)
-    if (!found)  setArr(arr.concat(newObj)) ;
+    if (!found)  {
+        setArr(arr.concat(newObj))
+        setSumm(summ+good.price)
+    } ;
     return arr;
 }
 
