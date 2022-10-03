@@ -1,38 +1,200 @@
-.App {
+/* ---------------------------общее-------------------------- */
+.nav{
+  background-color: rgba(0, 0, 0, 0.116);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 98%;
+  flex-wrap: wrap;
+}
+.link{
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+body{
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.centerDiv{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerDivColumn{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1{
+  color: #CD104D;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ---------------------------главная-------------------------- */
+.buttonToShop{
+  margin-top: 50px;
+  border: 1px solid #9C2C77;
+  background-color:#9C2C77 ;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 5px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.gift{
+  position: absolute;
+  bottom: 10px;
+  border-bottom: none;
+  border-top: none;
+}
+.imgMain{
+  width: 300px;
+  height: 450px;
+  border:solid #FD841F 1px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ---------------------------каталог-------------------------- */
+
+.shopDivButtons{
+  background-color:rgba(0, 0, 0, 0.116);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.shopButton{
+  border: none;
+  background-color: #00000000;
+  color:black;
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.card{
+  background-color: #0000000a;
+  border:solid #FD841F 1px;
+  border-radius: 5px;
+  text-align: center;
+  flex:1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.shopAllBtn{
+  border: none;
+  font-size: 30px;
+  background-color: #ffffff00;
+  color: #CD104D;
+}
+
+.descriptionBtn,.slideBtn{
+  color:#9C2C77 ;
+  border: 1px solid #9C2C77;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* ---------------------------каталог (корзина)-------------------------- */
+.korzinaDiv{
+  display: flex;
+  border-top: 1px solid #FD841F;
+  height: 80px;
+  align-items: center;
+}
+
+.flexOne{
+  flex:1;
+}
+
+.korzinaBlock{
+  display: block;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 1;
+}
+.korzinaNone{
+  display: none;
+}
+
+.korzinaBtn{
+  position: fixed;
+  top:15px;
+  right: 15px;
+  z-index: 2;
+}
+
+input{
+  margin: 5px;
+}
+
+.deleteBtn{
+  font-size: 19px;
+  border: none;
+  color: #FD841F;
+  background-color: #ffffff00;
+}
+.top{
+  margin-top: 50px;
+}
+
+.pColor{
+  font-size: 20px;
+  color: #9C2C77;
+  font-weight: bold;
+}
+
+/* ---------------------------контакты-------------------------- */
+.map{
+  border:solid #FD841F 1px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ---------------------------адаптация-------------------------- */
+@media all and (max-width:500px){
+  .pColor{
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .displayAdapt{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width:380px){
+  .shopDivButtons{
+    flex-direction: column;
+  }
+  .displayAdapt{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgMain{
+    width: 250px;
+    height: 350px;
   }
 }
